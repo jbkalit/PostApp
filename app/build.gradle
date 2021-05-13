@@ -1,0 +1,122 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'dagger.hilt.android.plugin'
+}
+apply from: "$rootDir/dependencies.gradle"
+
+android {
+    compileSdkVersion compile_sdk
+    buildToolsVersion build_tools
+
+    defaultConfig {
+        applicationId "com.jbkalit.postapp"
+        minSdkVersion min_sdk
+        targetSdkVersion compile_sdk
+        versionCode version_code
+        versionName version_name
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding true
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+}
+
+kapt {
+    generateStubs = true
+}
+
+dependencies {
+
+    // modules
+    implementation project(':data')
+    implementation project(':domain')
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation libs.kotlin_script
+
+    implementation libs.androidx_core
+
+    // android supports
+    implementation libs.android_material
+    implementation libs.androidx_constraint
+
+    // architecture components
+    implementation libs.androidx_fragment
+    implementation libs.androidx_appcompat
+    implementation libs.androidx_legacy
+    implementation libs.androidx_recyclerview
+    implementation libs.androidx_swipeRefresh
+
+    // navigation
+    implementation libs.navigation_fragment
+    implementation libs.navigation_ui
+
+    // glide
+    implementation libs.glide
+    kapt libs.glide_compiler
+
+    // gson
+    implementation libs.gson
+
+    // okhttp
+    implementation libs.okhttp_logging
+
+    // retrofit
+    implementation libs.retrofit
+    implementation libs.retrofit_rxjava2
+    implementation libs.retrofit_gson
+
+    // lifecycle
+    implementation libs.androidx_livedata
+    implementation libs.androidx_viewmodel
+    implementation libs.androidx_runtime
+    implementation libs.androidx_savedstate
+
+    // rxjava
+    implementation libs.rx_java
+    implementation libs.rx_android
+
+    // hilt
+    kapt libs.hilt_android_compiler
+    implementation libs.hilt
+
+    // test
+    testImplementation libs.mockito_core
+    androidTestImplementation libs.mockito_android
+    testImplementation libs.junit
+    testImplementation libs.mockk
+    testImplementation libs.androidx_test
+    testImplementation libs.arch_core_test
+    androidTestImplementation libs.androidx_rules_test
+    androidTestImplementation libs.androidx_runner_test
+    androidTestImplementation libs.espresso
+
+    // image zoom
+    implementation libs.image_zoom
+
+}

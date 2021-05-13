@@ -1,0 +1,96 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="Theme.PostApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#CD0606</item>
+        <item name="colorPrimaryVariant">#CD0606</item>
+        <item name="colorOnPrimary">#CD0606</item>
+    </style>
+
+    <style name="ToolbarTextAppearanceTheme" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Title.Medium" parent="Title">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Title.Medium.Black" parent="Title.Medium">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Title.Medium.Light" parent="Title.Medium">
+        <item name="android:textColor">@color/gray_400</item>
+    </style>
+
+    <style name="Title.Medium.Bold" parent="Title.Medium">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Title.Medium.Bold.Black" parent="Title.Medium">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Title.Big" parent="Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Title.Big.Bold" parent="Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Title.Big.Bold.Black" parent="Title.Big.Bold">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Subtitle">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Subtitle.Medium" parent="Subtitle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Subtitle.Black" parent="Subtitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Subtitle.Green" parent="Subtitle">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Subtitle.Light" parent="Subtitle">
+        <item name="android:textColor">@color/gray_400</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Subtitle.Black.Bold" parent="Subtitle.Black">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Subtitle.Green.Bold" parent="Subtitle.Green">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Subtitle.Medium.Black" parent="Subtitle.Medium">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Subtitle.Medium.Light" parent="Subtitle.Medium">
+        <item name="android:textColor">@color/gray_400</item>
+    </style>
+
+</resources>

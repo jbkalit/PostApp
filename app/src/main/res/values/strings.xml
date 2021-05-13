@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PostApp</string>
+
+    <string name="feed">Feed</string>
+    <string name="comment">Post Comment</string>
+    <string name="album">Album</string>
+
+    <string name="name">name</string>
+    <string name="title">title</string>
+    <string name="body">body</string>
+    <string name="email">email</string>
+    <string name="address">address</string>
+    <string name="username">username</string>
+    <string name="company_name">company</string>
+
+    <string name="network_not_available">Tidak ada koneksi internet</string>
+    <string name="network_available">Terhubung ke internet</string>
+
+    <string name="generic_error">Something went wrong.</string>
+
+    <string name="no_internet">%1$s Tarik kebawah untuk mencoba lagi</string>
+    <string name="no_results">Tidak ada data ditemukan</string>
+
+</resources>
