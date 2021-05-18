@@ -1,4 +1,5 @@
 # PostApp
+![Bitrise](https://app.bitrise.io/app/bb70ca4399f1b76d/status.svg?token=PqTh4x_iuDyW3IZdMSBQjQ&branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/jbkalit/postapp/badge)](https://www.codefactor.io/repository/github/jbkalit/postapp)
 
 A Simple Android Mobile Application which has been implemented using Clean Architecture alongside MVVM design.
