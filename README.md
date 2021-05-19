@@ -2,6 +2,9 @@
 ![Bitrise](https://app.bitrise.io/app/bb70ca4399f1b76d/status.svg?token=PqTh4x_iuDyW3IZdMSBQjQ&branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/jbkalit/postapp/badge)](https://www.codefactor.io/repository/github/jbkalit/postapp)
 
+<a href="https://play.google.com/store/apps/details?id=com.jbkalit.postapp" target="_blank">
+<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="70"/></a>
+
 A Simple Android Mobile Application which has been implemented using Clean Architecture alongside MVVM design.
 
 ### Technologies & Methodologies which used:
